@@ -74,7 +74,37 @@ class Adapter(object):
 #             end_sequence=('Barcode_2_end', 'TTTTTTTTGGGGGGGGCCCCCCCCAAAAAAAA'))
 
 
-ADAPTERS = [Adapter('SQK-NSK007',
+ADAPTERS = [
+
+             ##### Update 2-2024: https://community.nanoporetech.com/technical_documents/chemistry-technical-document/v/chtd_500_v1_revan_07jul2016/adapter-sequences
+             Adapter('Ligation_Adapter (LA)',
+                    start_sequence=('Top_strand', 'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT'),
+                    end_sequence=('Bottom_strand', 'GCAATACGTAACTGAACGAAGTACAGG')),
+             Adapter('Native_Adapter (NA)',
+                    start_sequence=('Top_strand', 'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT'),
+                    end_sequence=('Bottom_strand', 'ACGTAACTGAACGAAGTACAGG')),  
+            Adapter('Rapid_Adapter (RA)',
+                    start_sequence=('Top_strand',
+                                    'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT')),
+            Adapter('RT_Primer (RT)',
+                    start_sequence=('Top_strand',
+                                    'CTTGCCTGTCGCTCTATCTTCAGAGGAG')),
+            Adapter('Strand_Switching_Primer II (SSPII)',
+                    start_sequence=('Top_strand',
+                                    'TTTCTGTTGGTGCTGATATTGCTTTVVVVTTVVVVTTVVVVTTVVVVTTTmGmGmG')),
+            Adapter('cDNA_RT_Adapter (CRTA)',
+                    start_sequence=('Top_strand',
+                                    'CTTGCGGGCGGCGGACTCTCCTCTGAAGATAGAGCGACAGGCAAG')),            
+            Adapter('Rapid_Adapter T (RAP T)',
+                    start_sequence=('Top_strand',
+                                    'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT')),
+            Adapter('cDNA_Primer (cPRM)',
+                    start_sequence=('Top_strand', 'ATCGCCTACCGTGACAAGAAAGTTGTCGGTGTCTTTGTGACTTGCCTGTCGCTCTATCTTC'),
+                    end_sequence=('Bottom_strand', 'ATCGCCTACCGTGACAAGAAAGTTGTCGGTGTCTTTGTGTTTCTGTTGGTGCTGATATTGC')),
+            
+            #### Legacy adapters
+    
+            Adapter('SQK-NSK007',
                     start_sequence=('SQK-NSK007_Y_Top', 'AATGTACTTCGTTCAGTTACGTATTGCT'),
                     end_sequence=('SQK-NSK007_Y_Bottom', 'GCAATACGTAACTGAACGAAGT')),
 
@@ -82,6 +112,8 @@ ADAPTERS = [Adapter('SQK-NSK007',
             Adapter('Rapid',
                     start_sequence=('Rapid_adapter',
                                     'GTTTTCGCATTTATCGTGAAACGCTTTCGCGTTTTTCGTGCGCCGCTTCA')),
+
+    
 
             Adapter('RBK004_upstream',
                     start_sequence=('RBK004_upstream', 'AATGTACTTCGTTCAGTTACGGCTTGGGTGTTTAACC')),
