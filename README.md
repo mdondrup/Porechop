@@ -4,6 +4,7 @@ Install with pip (from GitHub): `pip3 install git+https://github.com/mdondrup/Po
 
 For other installation instructions, update the repository path.
 
+For recent data, possibly increase `--middle_threshold` and `--end_threshold`.
 
 <p align="center"><img src="misc/porechop_logo_knife.png" alt="Porechop" width="600"></p>
 
