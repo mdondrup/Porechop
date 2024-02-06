@@ -1,4 +1,9 @@
-My personal version with updated adapter sequences as of February 2024
+My porechop version with updated adapter sequences as of February 2024.
+
+Install with pip (from GitHub): `pip3 install git+https://github.com/mdondrup/Porechop.git`
+
+For other installation instructions, update the repository path.
+
 
 <p align="center"><img src="misc/porechop_logo_knife.png" alt="Porechop" width="600"></p>
 
