@@ -1,4 +1,4 @@
-My porechop version with updated adapter sequences as of February 2024.
+My porechop fork with updated adapter sequences as of February 2024. This is my personal version for running Snakemake pipelines and I'm not going to support it in any way.
 
 Install with pip (from GitHub): `pip3 install git+https://github.com/mdondrup/Porechop.git`
 
