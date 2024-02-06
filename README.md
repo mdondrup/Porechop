@@ -1,3 +1,5 @@
+My personal version with updated adapter sequences as of February 2024
+
 <p align="center"><img src="misc/porechop_logo_knife.png" alt="Porechop" width="600"></p>
 
 Porechop is a tool for finding and removing adapters from [Oxford Nanopore](https://nanoporetech.com/) reads. Adapters on the ends of reads are trimmed off, and when a read has an adapter in its middle, it is treated as chimeric and chopped into separate reads. Porechop performs thorough alignments to effectively find adapters, even at low sequence identity.
