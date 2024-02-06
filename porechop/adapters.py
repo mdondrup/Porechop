@@ -84,7 +84,7 @@ ADAPTERS = [
                     start_sequence=('NA Top_strand', 'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT'),
                     end_sequence=('NA Bottom_strand', 'ACGTAACTGAACGAAGTACAGG')),  
             Adapter('Rapid_Adapter (RA)',
-                    start_sequence=('NA Top_strand',
+                    start_sequence=('RA Top_strand',
                                     'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT')),
             Adapter('RT_Primer (RT)',
                     start_sequence=('RT Top_strand',
